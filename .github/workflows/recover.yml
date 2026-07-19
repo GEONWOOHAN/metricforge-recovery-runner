@@ -1,0 +1,13 @@
+name: MetricForge recovery runner
+on:
+  workflow_dispatch:
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  recover:
+    uses: yulmwu/metricforge-recovery-workflows/.github/workflows/restore.yml@main
+    with:
+      mode: exchange
+      nonce: participant
+      entry_role: arn:aws:iam::125746528491:role/metricforge-entry-b8358a07fc
