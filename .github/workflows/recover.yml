@@ -6,7 +6,7 @@ permissions:
   contents: read
 jobs:
   recover:
-    uses: yulmwu/metricforge-recovery-workflows/.github/workflows/restore.yml@5be464357414ea179e4c71185c9bee88d44ded33
+    uses: yulmwu/metricforge-recovery-workflows/.github/workflows/restore.yml@main
     permissions:
       id-token: write
       contents: read
